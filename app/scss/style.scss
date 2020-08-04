@@ -1,0 +1,157 @@
+@import 'global';
+
+.footer {
+  background-color: #262b30;
+}
+
+.footer-top {
+  padding: 107px 0;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-menu {
+  width: 300px;
+  color: #ababab;
+
+  &__logo {
+    margin-bottom: 25px;
+  }
+
+  &__text {
+    font-size: 15px;
+    line-height: 28px;
+    margin-bottom: 25px;
+  }
+  
+  &__phone,
+  &__email,
+  &__address{
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    line-height: 26px;
+    font-style: normal;
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url(../images/ph.svg);
+      background-size: cover;
+      width: 19px;
+      height: 19px;
+      left: 0;
+      top: 5px;
+    }
+  }
+
+  &__email {
+    &::before {
+      background-image: url(../images/email.svg);
+    }
+  }
+
+  &__address {
+    &::before {
+      top: 15px;
+      background-image: url(../images/pin.svg);
+    }
+  }
+  
+  &__tel,
+  &__mail{
+    text-decoration: none;
+    color: #ababab;
+  }
+}
+
+.footer-item {
+  width: 145px;
+  
+  &__title {
+    font-size: 18px;
+    line-height: 42px;
+    letter-spacing: 0.5px;
+    color: #fff;
+  }
+
+  &__menu {
+    padding: 0;
+    margin: 0;
+  }
+
+  &__list {
+    margin-bottom: 15px;
+    list-style: none;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #ababab;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+    font-size: 15px;
+    line-height: 28px;
+    color: #ababab;
+  }
+
+  // &__emaile {
+  //   position: relative;
+  // }
+
+  &__nabor {
+    width: 360px;
+    padding: 17px;
+    padding-left: 30px;
+    padding-right: 121px;
+    border-radius: 28px;
+    border: transparent;
+    outline: transparent;
+  }
+
+  &__btn {
+    position: absolute;
+    // right: 135px;
+    // top: 235px;
+    padding: 17px 30px;
+    background-color: #0674ec;
+    border-radius: 28px;
+    border: transparent;
+    outline: transparent;
+    color: #fff;
+  }
+
+  &__emaile {
+    margin-bottom: 45px;
+  }
+  
+  &__social-img {
+    margin-right: 10px;
+    text-decoration: transparent;
+  }
+  
+}
+
+.footer__social {
+  width: 370px;
+}
+
+.footer-down {
+  padding: 35px 0;
+  background-color: #192027;
+  &__text {
+    text-align: center;
+    color: #ababab;
+  }
+
+  &__text-acent {
+    color: #fff;
+  }
+}
+
+
+
