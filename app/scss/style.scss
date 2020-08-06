@@ -1,16 +1,13 @@
-@import 'global';
+@import "global";
 
 .footer {
   background-color: #262b30;
 }
 
-.footer-top {
-  padding: 107px 0;
-}
-
-.footer__inner {
+.footer-top__inner {
   display: flex;
   justify-content: space-between;
+  padding: 107px 0;
 }
 
 .footer-menu {
@@ -26,17 +23,22 @@
     line-height: 28px;
     margin-bottom: 25px;
   }
-  
-  &__phone,
-  &__email,
-  &__address{
+}
+
+.footer-address {
+  &__tel,
+  &__mail {
+    text-decoration: none;
+    color: #ababab;
+  }
+  &__link {
     position: relative;
     padding-left: 30px;
     margin-bottom: 10px;
     line-height: 26px;
     font-style: normal;
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       background-image: url(../images/ph.svg);
       background-size: cover;
@@ -45,31 +47,21 @@
       left: 0;
       top: 5px;
     }
-  }
 
-  &__email {
-    &::before {
+    &--email::before {
       background-image: url(../images/email.svg);
     }
-  }
 
-  &__address {
-    &::before {
+    &--address::before {
       top: 15px;
       background-image: url(../images/pin.svg);
     }
-  }
-  
-  &__tel,
-  &__mail{
-    text-decoration: none;
-    color: #ababab;
   }
 }
 
 .footer-item {
   width: 145px;
-  
+
   &__title {
     font-size: 18px;
     line-height: 42px;
@@ -99,9 +91,10 @@
     color: #ababab;
   }
 
-  // &__emaile {
-  //   position: relative;
-  // }
+  &__form {
+    position: relative;
+    margin-bottom: 25px;
+  }
 
   &__nabor {
     width: 360px;
@@ -115,8 +108,8 @@
 
   &__btn {
     position: absolute;
-    right: 135px;
-    top: 235px;
+    right: -216px;
+    top: 0;
     padding: 17px 30px;
     background-color: #0674ec;
     border-radius: 28px;
@@ -128,15 +121,19 @@
   &__emaile {
     margin-bottom: 45px;
   }
-  
+
+  &__social {
+    display: flex;
+    justify-content: space-between;
+  }
+
   &__social-img {
     margin-right: 10px;
     text-decoration: transparent;
   }
-  
 }
 
-.footer__social {
+.text {
   width: 370px;
 }
 
@@ -148,10 +145,19 @@
     color: #ababab;
   }
 
-  &__text-acent {
+  &__text-link {
+    text-decoration: transparent;
     color: #fff;
   }
 }
 
+.link-action {
+  &:hover {
+    color: #66a1d2;
+    transition: all 0.5s;
+  }
 
-
+  &:focus {
+    color: #b564d4;
+  }
+}
