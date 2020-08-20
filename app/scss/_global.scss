@@ -1,19 +1,27 @@
 html {
-    box-sizing: border-box;
-  }
-  
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherit;
-  }
+  box-sizing: border-box;
+}
 
-  .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 15px;
-  }
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
-  body {
-    font-family: 'Quicksand', sans-serif;
-  }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+.btn {
+  padding: 20px 32px;
+  border-radius: 35px;
+  font-size: 16px;
+  border: 1px solid #fff;
+  color: #fff;
+}

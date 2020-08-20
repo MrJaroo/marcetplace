@@ -1,4 +1,13 @@
 @import "global";
+@import "fonts";
+@import "title";
+@import "vars";
+
+
+.one {
+  min-height: 500px;
+  background-color: #fff;
+}
 
 .footer {
   background-color: #262b30;
@@ -38,29 +47,87 @@
     line-height: 26px;
     font-style: normal;
     &::before {
-      content: "";
+      content: "\e942";
       position: absolute;
-      background-image: url(../images/ph.svg);
-      background-size: cover;
-      width: 19px;
-      height: 19px;
       left: 0;
-      top: 5px;
+      top: 1px;
+      font-family: "icomoon";
+      font-size: 16px;
+      color: #fff;
     }
 
     &--email::before {
-      background-image: url(../images/email.svg);
+      content: "\e945";
+      font-family: "icomoon";
     }
 
     &--address::before {
+      content: "\e947";
+      font-family: "icomoon";
       top: 15px;
-      background-image: url(../images/pin.svg);
     }
   }
 }
 
 .footer-item {
   width: 145px;
+
+  &__img-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: #395799;
+    position: relative;
+    &::before {
+      content: "\ea90";
+      position: absolute;
+      color: #fff;
+      font-size: 16px;
+      font-family: "icomoon";
+      left: 14px;
+      top: 12px;
+    }
+  }
+
+  &--link-tvitter {
+    background-color: #19b2f5;
+    &::before {
+      content: "\ea96";
+      font-family: 'icomoon';
+    }
+  }
+
+  &--link-google {
+    background-color: #f05b44;
+    &::before {
+      content: "\ea88";
+      font-family: 'icomoon';
+    }
+  }
+
+  &--link-pinterest {
+    background-color: #9c0c1c;
+    &::before {
+      content: "\ead1";
+      font-family: 'icomoon';
+    }
+  }
+
+  &--link-linkedin {
+    background-color: #0da6be;
+    &::before {
+      content: "\eaca";
+      font-family: 'icomoon';
+    }
+  }
+
+  &--link-dribbble {
+    background-color: #ea4c89;
+    &::before {
+      content: "\eaa7";
+      font-family: 'icomoon';
+    }
+  }
 
   &__title {
     font-size: 18px;
