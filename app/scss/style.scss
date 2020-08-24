@@ -3,7 +3,6 @@
 @import "title";
 @import "vars";
 
-
 .one {
   min-height: 500px;
   background-color: #fff;
@@ -19,15 +18,15 @@
   padding: 107px 0;
 }
 
-.footer-menu {
+.footer-top__menu {
   width: 300px;
   color: #ababab;
 
-  &__logo {
+  &-logo {
     margin-bottom: 25px;
   }
 
-  &__text {
+  &-text {
     font-size: 15px;
     line-height: 28px;
     margin-bottom: 25px;
@@ -37,10 +36,9 @@
 .footer-address {
   &__tel,
   &__mail {
+    display: block;
     text-decoration: none;
     color: #ababab;
-  }
-  &__link {
     position: relative;
     padding-left: 30px;
     margin-bottom: 10px;
@@ -55,24 +53,37 @@
       font-size: 16px;
       color: #fff;
     }
+  }
 
-    &--email::before {
+  &__mail {
+    &::before {
       content: "\e945";
       font-family: "icomoon";
     }
+  }
 
-    &--address::before {
+  &__link {
+    padding-left: 30px;
+    position: relative;
+    font-style: normal;
+    &::before {
       content: "\e947";
+      position: absolute;
       font-family: "icomoon";
-      top: 15px;
+      top: 8px;
+      left: 0;
+      font-size: 16px;
+      color: #fff;
     }
   }
 }
 
-.footer-item {
+.footer__social {
   width: 145px;
+  display: flex;
 
-  &__img-icon {
+  &-img-icon {
+    margin-right: 10px;
     width: 42px;
     height: 42px;
     border-radius: 50%;
@@ -93,7 +104,7 @@
     background-color: #19b2f5;
     &::before {
       content: "\ea96";
-      font-family: 'icomoon';
+      font-family: "icomoon";
     }
   }
 
@@ -101,7 +112,7 @@
     background-color: #f05b44;
     &::before {
       content: "\ea88";
-      font-family: 'icomoon';
+      font-family: "icomoon";
     }
   }
 
@@ -109,7 +120,7 @@
     background-color: #9c0c1c;
     &::before {
       content: "\ead1";
-      font-family: 'icomoon';
+      font-family: "icomoon";
     }
   }
 
@@ -117,7 +128,7 @@
     background-color: #0da6be;
     &::before {
       content: "\eaca";
-      font-family: 'icomoon';
+      font-family: "icomoon";
     }
   }
 
@@ -125,11 +136,14 @@
     background-color: #ea4c89;
     &::before {
       content: "\eaa7";
-      font-family: 'icomoon';
+      font-family: "icomoon";
     }
   }
+}
 
+.footer-item {
   &__title {
+    margin-bottom: 24px;
     font-size: 18px;
     line-height: 42px;
     letter-spacing: 0.5px;
@@ -175,7 +189,7 @@
 
   &__btn {
     position: absolute;
-    right: -216px;
+    right: 9px;
     top: 0;
     padding: 17px 30px;
     background-color: #0674ec;
@@ -187,16 +201,6 @@
 
   &__emaile {
     margin-bottom: 45px;
-  }
-
-  &__social {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  &__social-img {
-    margin-right: 10px;
-    text-decoration: transparent;
   }
 }
 
