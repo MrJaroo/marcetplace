@@ -95,7 +95,7 @@
       color: #fff;
       font-size: 16px;
       font-family: "icomoon";
-      left: 14px;
+      left: 13px;
       top: 12px;
     }
   }
@@ -192,16 +192,19 @@
     right: 9px;
     top: 0;
     padding: 17px 30px;
-    background-color: #0674ec;
-    border-radius: 28px;
-    border: transparent;
-    outline: transparent;
     color: #fff;
   }
 
   &__emaile {
     margin-bottom: 45px;
   }
+}
+
+.btn-submit {
+  background-color: #0674ec;
+  border-radius: 28px;
+  border: transparent;
+  outline: transparent;
 }
 
 .text {
@@ -230,5 +233,156 @@
 
   &:focus {
     color: #b564d4;
+  }
+}
+
+.inner-icon {
+  position: relative;
+  margin-right: 30px;
+}
+
+.header {
+  min-height: 70px;
+  background-color: $bg;
+  &__inner {
+    padding: 25px 0px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__inner-logo {
+    margin-right: 440px;
+  }
+
+  &__inner-btn {
+    height: 36px;
+    margin-right: 50px;
+    padding: 0px 17px;
+    font-size: 14px;
+    border-radius: 30px;
+    border: transparent;
+    background-color: $blue;
+    color: #fff;
+  }
+
+  &__inner-icons {
+    display: flex;
+  }
+
+  &__inner-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    padding: 0px 3px;
+    min-width: 22px;
+    min-height: 22px;
+    border-radius: 50%;
+    left: 9px;
+    top: -16px;
+    color: #fff;
+    font-size: 14px;
+    background-color: #ff6a6c;
+  }
+
+  &__inner-number--email {
+    background-color: #62d03b;
+  }
+
+  &__inner-number--shop {
+    background-color: $blue;
+  }
+
+  &__inner-shop {
+    margin-right: 50px;
+  }
+
+  &__inner-ico {
+    width: 20px;
+    height: 20px;
+  }
+
+  &__inner-user {
+    display: flex;
+    align-items: center;
+  }
+
+  &__inner-photo {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    border-radius: 50%;
+    background-color: #7c7979;
+  }
+
+  &__inner-name {
+    font-size: 16px;
+    @include f500;
+    color: #333333;
+    margin-bottom: 3px;
+  }
+
+  &__inner-mone {
+    font-size: 15px;
+    color: $blue;
+  }
+
+  &__inner-down {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80px;
+    background-color: #fff;
+  }
+
+  &__inner-list {
+    padding: 0;
+    margin: 0;
+  }
+
+  &__inner-punkt {
+    margin-right: 33px;
+    display: inline-block;
+    list-style: none;
+  }
+
+  &__inner-link-list {
+    @include f700;
+    font-size: 15px;
+    text-decoration: transparent;
+    text-transform: uppercase;
+    color: #333333;
+  }
+
+  &__inner-form {
+    max-width: 360px;
+    width: 100%;
+    position: relative;
+  }
+
+  &__inner-form-search {
+    max-width: 360px;
+    width: 100%;
+    padding: 16px 25px;
+    padding-right: 94px;
+    border-radius: 30px;
+    border: 1px solid  #d9dfe5;
+    outline: transparent;
+    &::placeholder {
+      color: #898f96;
+      font-size: 15px;
+    }
+  }
+
+  &__inner-form-btn {
+    position: absolute;
+    width: 70px;
+    height: 51px;
+    right:0 ;
+  }
+
+  &__inner-form-ico {
+    width: 17px;
+    height: 17px;
   }
 }
