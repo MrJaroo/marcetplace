@@ -39,7 +39,7 @@
   font-display: block;
 }
 
-[class^="icon-"],
+[class^="icon-"]::before,
 [class*=" icon-"]::before {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
@@ -55,6 +55,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-cart:before {
+  content: "\e93a";
+}
 .icon-phone:before {
   content: "\e942";
 }
@@ -63,6 +66,9 @@
 }
 .icon-location:before {
   content: "\e947";
+}
+.icon-bell:before {
+  content: "\e951";
 }
 .icon-google:before {
   content: "\ea88";
@@ -81,7 +87,4 @@
 }
 .icon-pinterest:before {
   content: "\ead1";
-}
-.icon-angle-down:before {
-  content: "\f107";
 }

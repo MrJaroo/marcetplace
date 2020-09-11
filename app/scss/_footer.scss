@@ -1,0 +1,240 @@
+.footer {
+    background-color: #262b30;
+  }
+  
+  .footer-top__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 107px 0;
+  }
+  
+  .footer-top__menu {
+    width: 300px;
+    color: #ababab;
+  
+    &-logo {
+      margin-bottom: 25px;
+    }
+  
+    &-text {
+      font-size: 15px;
+      line-height: 28px;
+      margin-bottom: 25px;
+    }
+  }
+  
+  .footer-address {
+    &__tel,
+    &__mail {
+      display: block;
+      text-decoration: none;
+      color: #ababab;
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 10px;
+      line-height: 26px;
+      font-style: normal;
+      &::before {
+        content: "\e942";
+        position: absolute;
+        left: 0;
+        top: 1px;
+        font-family: "icomoon";
+        font-size: 16px;
+        color: #fff;
+      }
+    }
+  
+    &__mail {
+      &::before {
+        content: "\e945";
+        font-family: "icomoon";
+      }
+    }
+  
+    &__link {
+      padding-left: 30px;
+      position: relative;
+      font-style: normal;
+      &::before {
+        content: "\e947";
+        position: absolute;
+        font-family: "icomoon";
+        top: 8px;
+        left: 0;
+        font-size: 16px;
+        color: #fff;
+      }
+    }
+  }
+  
+  .footer__social {
+    width: 145px;
+    display: flex;
+  }
+  
+  .social {
+    &__img {
+      display: block;
+      margin-right: 10px;
+      min-width: 42px;
+      min-height: 42px;
+      border-radius: 50%;
+      background-color: #395799;
+      position: relative;
+      &::before {
+        content: "\ea90";
+        position: absolute;
+        color: #fff;
+        font-size: 16px;
+        font-family: "icomoon";
+        left: 13px;
+        top: 12px;
+      }
+    }
+  
+    &__img--linkedin {
+      background-color: #19b2f5;
+      &::before {
+        content: "\ea96";
+        font-family: "icomoon";
+      }
+    }
+  
+    &__img--vk {
+      background-color: #f05b44;
+      &::before {
+        content: "\ea88";
+        font-family: "icomoon";
+      }
+    }
+  
+    &__img--pinterest {
+      background-color: #9c0c1c;
+      &::before {
+        content: "\ead1";
+        font-family: "icomoon";
+      }
+    }
+  
+    &__img--google {
+      background-color: #0da6be;
+      &::before {
+        content: "\eaca";
+        font-family: "icomoon";
+      }
+    }
+  
+    &__img--drebbble {
+      background-color: #ea4c89;
+      &::before {
+        content: "\eaa7";
+        font-family: "icomoon";
+      }
+    }
+  
+    &--link-dribbble {
+      background-color: #ea4c89;
+      &::before {
+        content: "\eaa7";
+        font-family: "icomoon";
+      }
+    }
+  }
+  
+  .footer-top-item {
+    &__title {
+      margin-bottom: 24px;
+      font-size: 18px;
+      line-height: 42px;
+      letter-spacing: 0.5px;
+      color: #fff;
+    }
+  
+    &__menu {
+      padding: 0;
+      margin: 0;
+    }
+  
+    &__list {
+      margin-bottom: 15px;
+      list-style: none;
+    }
+  
+    &__link {
+      text-decoration: none;
+      color: #ababab;
+    }
+  
+    &__text {
+      margin-bottom: 30px;
+      font-size: 15px;
+      line-height: 28px;
+      color: #ababab;
+    }
+  
+    &__form {
+      position: relative;
+      margin-bottom: 25px;
+    }
+  
+    &__nabor {
+      width: 360px;
+      padding: 17px;
+      padding-left: 30px;
+      padding-right: 121px;
+      border-radius: 28px;
+      border: transparent;
+      outline: transparent;
+    }
+  
+    &__btn {
+      position: absolute;
+      right: 9px;
+      top: 0;
+      padding: 17px 30px;
+      color: #fff;
+    }
+  
+    &__emaile {
+      margin-bottom: 45px;
+    }
+  }
+  
+  .btn-submit {
+    background-color: #0674ec;
+    border-radius: 28px;
+    border: transparent;
+    outline: transparent;
+  }
+  
+  .text {
+    width: 370px;
+  }
+  
+  .footer-top-copy {
+    padding: 35px 0;
+    background-color: #192027;
+    &__text {
+      text-align: center;
+      color: #ababab;
+    }
+  
+    &__text-link {
+      text-decoration: transparent;
+      color: #fff;
+    }
+  }
+  
+  .link-action {
+      outline: transparent;
+    &:hover {
+      color: #66a1d2;
+      transition: all 0.5s;
+    }
+  
+    &:focus {
+      color: #b564d4;
+      
+    }
+  }

@@ -2,259 +2,46 @@
 @import "fonts";
 @import "title";
 @import "vars";
+@import "footer";
 
 .one {
   min-height: 500px;
   background-color: #fff;
 }
 
-.footer {
-  background-color: #262b30;
-}
-
-.footer-top__inner {
-  display: flex;
-  justify-content: space-between;
-  padding: 107px 0;
-}
-
-.footer-top__menu {
-  width: 300px;
-  color: #ababab;
-
-  &-logo {
-    margin-bottom: 25px;
-  }
-
-  &-text {
-    font-size: 15px;
-    line-height: 28px;
-    margin-bottom: 25px;
-  }
-}
-
-.footer-address {
-  &__tel,
-  &__mail {
-    display: block;
-    text-decoration: none;
-    color: #ababab;
-    position: relative;
-    padding-left: 30px;
-    margin-bottom: 10px;
-    line-height: 26px;
-    font-style: normal;
-    &::before {
-      content: "\e942";
-      position: absolute;
-      left: 0;
-      top: 1px;
-      font-family: "icomoon";
-      font-size: 16px;
-      color: #fff;
-    }
-  }
-
-  &__mail {
-    &::before {
-      content: "\e945";
-      font-family: "icomoon";
-    }
-  }
-
-  &__link {
-    padding-left: 30px;
-    position: relative;
-    font-style: normal;
-    &::before {
-      content: "\e947";
-      position: absolute;
-      font-family: "icomoon";
-      top: 8px;
-      left: 0;
-      font-size: 16px;
-      color: #fff;
-    }
-  }
-}
-
-.footer__social {
-  width: 145px;
-  display: flex;
-
-  &-img-icon {
-    margin-right: 10px;
-    width: 42px;
-    height: 42px;
-    border-radius: 50%;
-    background-color: #395799;
-    position: relative;
-    &::before {
-      content: "\ea90";
-      position: absolute;
-      color: #fff;
-      font-size: 16px;
-      font-family: "icomoon";
-      left: 13px;
-      top: 12px;
-    }
-  }
-
-  &--link-tvitter {
-    background-color: #19b2f5;
-    &::before {
-      content: "\ea96";
-      font-family: "icomoon";
-    }
-  }
-
-  &--link-google {
-    background-color: #f05b44;
-    &::before {
-      content: "\ea88";
-      font-family: "icomoon";
-    }
-  }
-
-  &--link-pinterest {
-    background-color: #9c0c1c;
-    &::before {
-      content: "\ead1";
-      font-family: "icomoon";
-    }
-  }
-
-  &--link-linkedin {
-    background-color: #0da6be;
-    &::before {
-      content: "\eaca";
-      font-family: "icomoon";
-    }
-  }
-
-  &--link-dribbble {
-    background-color: #ea4c89;
-    &::before {
-      content: "\eaa7";
-      font-family: "icomoon";
-    }
-  }
-}
-
-.footer-item {
-  &__title {
-    margin-bottom: 24px;
-    font-size: 18px;
-    line-height: 42px;
-    letter-spacing: 0.5px;
-    color: #fff;
-  }
-
-  &__menu {
-    padding: 0;
-    margin: 0;
-  }
-
-  &__list {
-    margin-bottom: 15px;
-    list-style: none;
-  }
-
-  &__link {
-    text-decoration: none;
-    color: #ababab;
-  }
-
-  &__text {
-    margin-bottom: 30px;
-    font-size: 15px;
-    line-height: 28px;
-    color: #ababab;
-  }
-
-  &__form {
-    position: relative;
-    margin-bottom: 25px;
-  }
-
-  &__nabor {
-    width: 360px;
-    padding: 17px;
-    padding-left: 30px;
-    padding-right: 121px;
-    border-radius: 28px;
-    border: transparent;
-    outline: transparent;
-  }
-
-  &__btn {
-    position: absolute;
-    right: 9px;
-    top: 0;
-    padding: 17px 30px;
-    color: #fff;
-  }
-
-  &__emaile {
-    margin-bottom: 45px;
-  }
-}
-
-.btn-submit {
-  background-color: #0674ec;
-  border-radius: 28px;
-  border: transparent;
-  outline: transparent;
-}
-
-.text {
-  width: 370px;
-}
-
-.footer-down {
-  padding: 35px 0;
-  background-color: #192027;
-  &__text {
-    text-align: center;
-    color: #ababab;
-  }
-
-  &__text-link {
-    text-decoration: transparent;
-    color: #fff;
-  }
-}
-
-.link-action {
-  &:hover {
-    color: #66a1d2;
-    transition: all 0.5s;
-  }
-
-  &:focus {
-    color: #b564d4;
-  }
-}
 
 .inner-icon {
   position: relative;
   margin-right: 30px;
 }
 
+.header__bg {
+  background-color: $bg;
+}
+
+.header__inner-two {
+  background-color: #fff;
+}
+
+.ico {
+  font-size: 20px;
+  color: #7e8fa1;
+}
+
 .header {
   min-height: 70px;
-  background-color: $bg;
   &__inner {
-    padding: 25px 0px;
+    padding: 26px 0px;
     display: flex;
     align-items: center;
   }
 
-  &__inner-logo {
-    margin-right: 440px;
+  &__link {
+    display: block;
+    margin-right: 403px;
   }
 
-  &__inner-btn {
+  &__btn {
     height: 36px;
     margin-right: 50px;
     padding: 0px 17px;
@@ -263,6 +50,7 @@
     border: transparent;
     background-color: $blue;
     color: #fff;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
   }
 
   &__inner-icons {
@@ -278,8 +66,8 @@
     min-width: 22px;
     min-height: 22px;
     border-radius: 50%;
-    left: 9px;
-    top: -16px;
+    left: 10px;
+    top: -15px;
     color: #fff;
     font-size: 14px;
     background-color: #ff6a6c;
@@ -287,9 +75,13 @@
 
   &__inner-number--email {
     background-color: #62d03b;
+    left: 13px;
+    top: -16px;
   }
 
   &__inner-number--shop {
+    left: 17px;
+    top: -15px;
     background-color: $blue;
   }
 
@@ -310,7 +102,7 @@
   &__inner-photo {
     width: 50px;
     height: 50px;
-    margin-right: 20px;
+    margin-right: 22px;
     border-radius: 50%;
     background-color: #7c7979;
   }
@@ -319,10 +111,11 @@
     font-size: 16px;
     @include f500;
     color: #333333;
-    margin-bottom: 3px;
+    margin-bottom: 6px;
   }
 
   &__inner-mone {
+    margin-bottom: 3px;
     font-size: 15px;
     color: $blue;
   }
@@ -341,7 +134,7 @@
   }
 
   &__inner-punkt {
-    margin-right: 33px;
+    margin-right: 29px;
     display: inline-block;
     list-style: none;
   }
@@ -355,7 +148,7 @@
   }
 
   &__inner-form {
-    max-width: 360px;
+    max-width: 359px;
     width: 100%;
     position: relative;
   }
@@ -363,10 +156,10 @@
   &__inner-form-search {
     max-width: 360px;
     width: 100%;
-    padding: 16px 25px;
+    padding: 13px 26px;
     padding-right: 94px;
     border-radius: 30px;
-    border: 1px solid  #d9dfe5;
+    border: 1px solid #d9dfe5;
     outline: transparent;
     &::placeholder {
       color: #898f96;
@@ -377,12 +170,15 @@
   &__inner-form-btn {
     position: absolute;
     width: 70px;
-    height: 51px;
-    right:0 ;
+    height: 47px;
+    right: -2px;
   }
 
   &__inner-form-ico {
     width: 17px;
     height: 17px;
+    position: absolute;
+    left: 27px;
+    bottom: 14px;
   }
 }
