@@ -11,64 +11,66 @@
 
 <body>
     <header class="header">
-        <div class="header__bg">
+        <div class="header__top">
             <div class="container">
                 <div class="header__inner">
                     <a href="#" class="header__link">
                         <img class="header__logo" src="images/Logo-header.png" alt="Marcer Place">
                     </a>
-                    <button class="header__btn btn">
-                        Become a Seller
-                    </button>
-                    <div class="header__inner-icons">
-                        <div class="header__inner-zvon inner-icon">
-                            <div class="header__inner-number number"> 25</div>
-                            <div class="icon-bell ico">
+                    <div class="header__box">
+                        <a class="header__btn btn">
+                            Become a Seller
+                        </a>
+                        <div class="header__icons">
+                            <button class=" header__item header__icon">
+                                <span class="header__number number"> 25</span>
+                                <span class="icon-bell ico"></span>
+                            </button>
+                            <button class=" header__item header__icon">
+                                <span class="header__number header__number--email ">6</span>
+                                <span class="icon-envelop ico"> </span>
+                            </button>
+                            <button class="header__shop header__item header__icon">
+                                <span class="header__number header__number--shop">2</span>
+                                <span class="icon-cart ico"> </span>
+                            </button>
+                        </div>
+                        <a class="header__user" href="#">
+                            <div class="header__photo">
+                                <img src="images/unnamed.jpg" alt="user" class="header__avatar">
                             </div>
-                        </div>
-                        <div class="header__inner-email inner-icon">
-                            <div class="header__inner-number header__inner-number--email ">6</div>
-                            <div class="icon-envelop ico"> </div>
-                        </div>
-                        <div class="header__inner-shop inner-icon">
-                            <div class="header__inner-number header__inner-number--shop">2</div>
-                            <div class="icon-cart ico"> </div>
-                        </div>
-                    </div>
-                    <div class="header__inner-user">
-                        <div class="header__inner-photo"></div>
-                        <div class="header__inner-autor">
-                            <div class="header__inner-name">Taofiq Hakim</div>
-                            <div class="header__inner-mone">$20.45</div>
-                        </div>
+                            <div class="header__autor">
+                                <div class="header__name">Taofiq Hakim</div>
+                                <div class="header__mone">$20.45</div>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="header__inner-two">
             <div class="container">
-                <div class="header__inner-down">
-                    <nav class="header__inner-menu">
-                        <ul class="header__inner-list">
-                            <li class="header__inner-punkt"><a href="#"
-                                    class="header__inner-link-list link-action">Home</a>
+                <div class="header__down">
+                    <nav class="header__menu">
+                        <ul class="header__list">
+                            <li class="header__punkt"><a href="#" class="header__link-list link-action">Home</a>
                             </li>
-                            <li class="header__inner-punkt"><a href="#" class="header__inner-link-list link-action">All
+                            <li class="header__punkt"><a href="#" class="header__link-list link-action">All
                                     products</a>
                             </li>
-                            <li class="header__inner-punkt"><a href="#"
-                                    class="header__inner-link-list link-action">wordpress</a>
+                            <li class="header__punkt"><a href="#" class="header__link-list link-action">wordpress</a>
                             </li>
-                            <li class="header__inner-punkt"><a href="#"
-                                    class="header__inner-link-list link-action">festures</a></li>
-                            <li class="header__inner-punkt"><a href="#"
-                                    class="header__inner-link-list link-action">pages</a></li>
+                            <li class="header__punkt"><a href="#" class="header__link-list link-action">festures</a>
+                            </li>
+                            <li class="header__punkt"><a href="#" class="header__link-list link-action">pages</a></li>
                         </ul>
                     </nav>
-                    <form class="header__inner-form">
-                        <input class="header__inner-form-search" type="search" placeholder="Search product here...">
-                        <button class="header__inner-form-btn btn-submit" type="submit">
-                            <img class="header__inner-form-ico" src="images/icon/search.svg" alt="">
+                    <form class="header__form">
+                        <label class="speak" for="search"></label>
+                        <input class="header__form-search" type="search" placeholder="Search product here...">
+                        <button class="header__form-btn btn-submit" type="submit">
+                            <span class="speak"> Search now </span>
+                            <img class="header__form-ico" src="images/icon/search.svg" alt="">
                         </button>
                     </form>
                 </div>
@@ -80,14 +82,14 @@
         <section class="main-screen">
             <div class="container">
                 <div class="main-screen__title">
-                    <span class="main-screen__title--regular">Create Your Own</span>
+                    <span class="main-screen__title-regular">Create Your Own</span>
                     Digital Product Marketplace
                 </div>
                 <div class="main-screen__subtitle">
                     MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
                 </div>
-                <a href="#" class="main__btn-link btn-link btn--white"> View All Products</a>
-                <a href="#" class="main__btn-link btn-link ">
+                <a href="#" class="main__btn-link btn btn--white"> View All Products</a>
+                <a href="#" class="main__btn-link btn btn--white">
                     Popular Products
                 </a>
                 <form class="main-screen__search">
@@ -106,6 +108,252 @@
 
             </div>
         </section>
+        <section class="slider">
+            <div class="slider__inner">
+                <div class="container">
+                    <div class="slider__products title">
+                        <div class="slider__title">
+                            Weekly Featured Products
+                        </div>
+                        <span class="slider__switch btn"></span>
+                    </div>
+                    <div class="slider__item">
+                        <div class="slider__wrapper">
+                            <div class="item-product item-product--big">
+                                <div class="item-product__img">
+                                    <!-- <div class="item-product__img-hover"> -->
+                                    <img class="item-product__img-big" src="images/vela-indigo-image-1554111279616.jpg"
+                                        alt="">
+                                    <!-- </div> -->
+                                    <div class="item-product__hover">
+                                        <a href="#" class="item-product__btn btn btn--white"> More info</a>
+                                        <a href="#" class="item-product__btn btn btn--white">Live Demo</a>
+                                    </div>
+                                </div>
+                                <div class="item-product__inner">
+                                    <a class="item-product__title" href="#">E-commerce Shoping Cart</a>
+                                    <div class="item-product__autor">
+                                        <a class="item-product__avatar" href="#"></a>
+                                        <a class="item-product__name" href="#">
+                                            Theme-Valley
+                                        </a>
+                                        <a class="item-product__plagin" href="#">Plugin</a>
+                                    </div>
+                                    <div class="item-product__text">
+                                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                                        scelerisque
+                                        the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis.
+                                        Praesent
+                                        pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut
+                                        scelerisque.
+                                    </div>
+                                    <div class="item-product__filter">
+                                        <a class="product__btn btn-mix" href="#" type="button">
+                                            WordPress
+                                        </a>
+                                        <a class="product__btn btn-mix" href="#" type="button">
+                                            PSD Template
+                                        </a>
+                                        <a class="product__btn btn-mix" href="#" type="button">
+                                            Joomla
+                                        </a>
+                                    </div>
+                                    <div class="item-product__info">
+                                        <div class="item-product__wrapper">
+                                            <div class="item-product__price btn-mix">
+                                                $200-350
+                                            </div>
+                                            <button class="item-product__like">
+                                                90
+                                            </button>
+                                            <button class="item-product__shop">
+                                                246
+                                            </button>
+                                        </div>
+                                        <div class="rate-starr"></div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__wrapper">
+                            <div class="item-product item-product--big">
+                                <div class="item-product__img">
+                                    <div class="item-product__img-hover">
+                                        <img class="item-product__img-big"
+                                            src="images/vela-indigo-image-1554111279616.jpg" alt="">
+                                    </div>
+                                    <div class="item-product__hover">
+                                        <a href="#" class="item-product__btn btn btn--white"> More info</a>
+                                        <a href="#" class="item-product__btn btn btn--white">Live Demo</a>
+                                    </div>
+                                </div>
+                                <div class="item-product__inner">
+                                    <a class="item-product__title" href="#">E-commerce Shoping Cart</a>
+                                    <div class="item-product__autor">
+                                        <a class="item-product__avatar" href="#"></a>
+                                        <a class="item-product__name" href="#">
+                                            Theme-Valley
+                                        </a>
+                                        <a class="item-product__plagin" href="#">Plugin</a>
+                                    </div>
+                                    <div class="item-product__text">
+                                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                                        scelerisque
+                                        the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis.
+                                        Praesent
+                                        pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut
+                                        scelerisque.
+                                    </div>
+                                    <div class="item-product__filter">
+                                        <a class="product__btn btn-mix" href="#" type="button">
+                                            WordPress
+                                        </a>
+                                        <a class="product__btn btn-mix" href="#" type="button">
+                                            PSD Template
+                                        </a>
+                                        <a class="product__btn btn-mix" href="#" type="button">
+                                            Joomla
+                                        </a>
+                                    </div>
+                                    <div class="item-product__info">
+                                        <div class="item-product__wrapper">
+                                            <div class="item-product__price btn-mix">
+                                                $10-15
+                                            </div>
+                                            <button class="item-product__like">
+                                                90
+                                            </button>
+                                            <button class="item-product__shop">
+                                                246
+                                            </button>
+                                        </div>
+                                        <div class="rate-starr"></div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__wrapper">
+                            <div class="item-product item-product--big">
+                                <div class="item-product__img">
+                                    <div class="item-product__img-hover">
+                                        <img class="item-product__img-big"
+                                            src="images/vela-indigo-image-1554111279616.jpg" alt="">
+                                    </div>
+                                    <div class="item-product__hover">
+                                        <a href="#" class="item-product__btn btn btn--white"> More info</a>
+                                        <a href="#" class="item-product__btn btn btn--white">Live Demo</a>
+                                    </div>
+                                </div>
+                                <div class="item-product__inner">
+                                    <a class="item-product__title" href="#">E-commerce Shoping Cart</a>
+                                    <div class="item-product__autor">
+                                        <a class="item-product__avatar" href="#"></a>
+                                        <a class="item-product__name" href="#">
+                                            Theme-Valley
+                                        </a>
+                                        <a class="item-product__plagin" href="#">Plugin</a>
+                                    </div>
+                                    <div class="item-product__text">
+                                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                                        scelerisque
+                                        the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis.
+                                        Praesent
+                                        pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut
+                                        scelerisque.
+                                    </div>
+                                    <div class="item-product__filter">
+                                        <a class="product__btn btn-mix" href="#" type="button">
+                                            WordPress
+                                        </a>
+                                        <a class="product__btn btn-mix" href="#" type="button">
+                                            PSD Template
+                                        </a>
+                                        <a class="product__btn btn-mix" href="#" type="button">
+                                            Joomla
+                                        </a>
+                                    </div>
+                                    <div class="item-product__info">
+                                        <div class="item-product__wrapper">
+                                            <div class="item-product__price btn-mix">
+                                                $200-350
+                                            </div>
+                                            <button class="item-product__like">
+                                                90
+                                            </button>
+                                            <button class="item-product__shop">
+                                                246
+                                            </button>
+                                        </div>
+                                        <div class="rate-starr"></div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__wrapper">
+                            <div class="item-product item-product--big">
+                                <div class="item-product__img">
+                                    <div class="item-product__img-hover">
+                                        <img class="item-product__img-big"
+                                            src="images/vela-indigo-image-1554111279616.jpg" alt="">
+                                    </div>
+                                    <div class="item-product__hover">
+                                        <a href="#" class="item-product__btn btn btn--white"> More info</a>
+                                        <a href="#" class="item-product__btn btn btn--white">Live Demo</a>
+                                    </div>
+                                </div>
+                                <div class="item-product__inner">
+                                    <a class="item-product__title" href="#">E-commerce Shoping Cart</a>
+                                    <div class="item-product__autor">
+                                        <a class="item-product__avatar" href="#"></a>
+                                        <a class="item-product__name" href="#">
+                                            Theme-Valley
+                                        </a>
+                                        <a class="item-product__plagin" href="#">Plugin</a>
+                                    </div>
+                                    <div class="item-product__text">
+                                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                                        scelerisque
+                                        the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis.
+                                        Praesent
+                                        pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut
+                                        scelerisque.
+                                    </div>
+                                    <div class="item-product__filter">
+                                        <a class="product__btn btn-mix" href="#" type="button">
+                                            WordPress
+                                        </a>
+                                        <a class="product__btn btn-mix" href="#" type="button">
+                                            PSD Template
+                                        </a>
+                                        <a class="product__btn btn-mix" href="#" type="button">
+                                            Joomla
+                                        </a>
+                                    </div>
+                                    <div class="item-product__info">
+                                        <div class="item-product__wrapper">
+                                            <div class="item-product__price btn-mix">
+                                                $200-350
+                                            </div>
+                                            <button class="item-product__like">
+                                                90
+                                            </button>
+                                            <button class="item-product__shop">
+                                                246
+                                            </button>
+                                        </div>
+                                        <div class="rate-starr"></div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="product">
             <div class="container">
                 <div class="product__inner">
@@ -113,11 +361,43 @@
                         <div class="release-product__title">
                             Newest Release Products
                         </div>
-                        <div class="release-product__filter">
-                            Filter by
+                        <div class="release-product__wrapper">
+                            <div class="release-product__filter">
+                                Filter by
+                            </div>
+                            <div class="release-product__triangle"></div>
+                            <div class="release-product__menu">
+                                <ul class="release-product__list">
+                                    <li class="release-product__link">
+                                        <a class="release-product__btn" href="#">
+                                            Trending items
+                                        </a>
+                                    </li>
+                                    <li class="release-product__link">
+                                        <a class="release-product__btn" href="#">
+                                            Best seller
+                                        </a>
+                                    </li>
+                                    <li class="release-product__link">
+                                        <a class="release-product__btn" href="#">
+                                            Best rating
+                                        </a>
+                                    </li>
+                                    <li class="release-product__link">
+                                        <a class="release-product__btn" href="#">
+                                            Low price
+                                        </a>
+                                    </li>
+                                    <li class="release-product__link">
+                                        <a class="release-product__btn" href="#">
+                                            Hihg price
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <div class="product__filter title">
+                    <div class="product__filter filter">
                         <button class="product__btn btn-mix" type="button" data-filter=".category-plaguns">
                             Plugins
                         </button>
@@ -145,20 +425,21 @@
                     </div>
                     <div class="product__item">
                         <div class="item-product mix category-wordpress">
-                            <div class="item-product__img">
+                            <div class="item-product__img"
+                                style="background-image: url(images/vela-indigo-image-1554111279616.jpg);">
                                 <div class="item-product__hover">
-                                    <a href="#" class="item-product__btn btn-link"> More info</a>
-                                    <a href="#" class="item-product__btn btn-link">Live Demo</a>
+                                    <a href="#" class="item-product__btn btn btn--white"> More info</a>
+                                    <a href="#" class="item-product__btn btn btn--white">Live Demo</a>
                                 </div>
                             </div>
                             <div class="item-product__inner">
-                                <div class="item-product__title">E-commerce Shoping Cart</div>
+                                <a class="item-product__title" href="#">E-commerce Shoping Cart</a>
                                 <div class="item-product__autor">
-                                    <div class="item-product__avatar"></div>
-                                    <div class="item-product__name">
+                                    <a class="item-product__avatar" href="#"></a>
+                                    <a class="item-product__name" href="#">
                                         Theme-Valley
-                                    </div>
-                                    <div class="item-product__plagin">Plugin</div>
+                                    </a>
+                                    <a class="item-product__plagin" href="#">Plugin</a>
                                 </div>
                                 <div class="item-product__text">
                                     Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
@@ -170,31 +451,32 @@
                                     <div class="item-product__price btn-mix">
                                         $200-350
                                     </div>
-                                    <div class="item-product__like">
+                                    <button class="item-product__like">
                                         90
-                                    </div>
+                                    </button>
                                 </div>
                                 <div class="rate-starr"></div>
-                                <div class="item-product__shop">
+                                <button class="item-product__shop">
                                     246
-                                </div>
+                                </button>
                             </div>
                         </div>
                         <div class="item-product mix category-plaguns">
-                            <div class="item-product__img">
+                            <div class="item-product__img"
+                                style="background-image: url(images/vela-indigo-image-1554111279616.jpg);">
                                 <div class="item-product__hover">
-                                    <a href="#" class="item-product__btn btn-link"> More info</a>
-                                    <a href="#" class="item-product__btn btn-link">Live Demo</a>
+                                    <a href="#" class="item-product__btn btn btn--white"> More info</a>
+                                    <a href="#" class="item-product__btn btn btn--white">Live Demo</a>
                                 </div>
                             </div>
                             <div class="item-product__inner">
-                                <div class="item-product__title">E-commerce Shoping Cart</div>
+                                <a class="item-product__title" href="#">E-commerce Shoping Cart</a>
                                 <div class="item-product__autor">
-                                    <div class="item-product__avatar"></div>
-                                    <div class="item-product__name">
+                                    <a class="item-product__avatar" href="#"></a>
+                                    <a class="item-product__name" href="#">
                                         Theme-Valley
-                                    </div>
-                                    <div class="item-product__plagin">Plugin</div>
+                                    </a>
+                                    <a class="item-product__plagin" href="#">Plugin</a>
                                 </div>
                                 <div class="item-product__text">
                                     Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
@@ -206,30 +488,32 @@
                                     <div class="item-product__price btn-mix">
                                         $20
                                     </div>
-                                    <div class="item-product__like">
+                                    <button class="item-product__like">
                                         90
-                                    </div>
+                                    </button>
                                 </div>
-                                <div class="item-product__shop">
+                                <button class="item-product__shop">
                                     246
-                                </div>
+                                </button>
                             </div>
                         </div>
                         <div class="item-product mix category-wordpress">
-                            <div class="item-product__img">
+                            <div class="item-product__jpg">
+                                <img class="item-product__img" src="images/vela-indigo-image-1554111279616.jpg"
+                                    alt="product">
                                 <div class="item-product__hover">
-                                    <a href="#" class="item-product__btn btn-link"> More info</a>
-                                    <a href="#" class="item-product__btn btn-link">Live Demo</a>
+                                    <a href="#" class="item-product__btn btn btn--white"> More info</a>
+                                    <a href="#" class="item-product__btn btn btn--white">Live Demo</a>
                                 </div>
                             </div>
                             <div class="item-product__inner">
-                                <div class="item-product__title">E-commerce Shoping Cart</div>
+                                <a class="item-product__title" href="#">E-commerce Shoping Cart</a>
                                 <div class="item-product__autor">
-                                    <div class="item-product__avatar"></div>
-                                    <div class="item-product__name">
+                                    <a class="item-product__avatar" href="#"></a>
+                                    <a class="item-product__name" href="#">
                                         Theme-Valley
-                                    </div>
-                                    <div class="item-product__plagin">Plugin</div>
+                                    </a>
+                                    <a class="item-product__plagin" href="#">Plugin</a>
                                 </div>
                                 <div class="item-product__text">
                                     Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
@@ -241,30 +525,32 @@
                                     <div class="item-product__price btn-mix">
                                         $20
                                     </div>
-                                    <div class="item-product__like">
+                                    <button class="item-product__like">
                                         90
-                                    </div>
+                                    </button>
                                 </div>
-                                <div class="item-product__shop">
+                                <button class="item-product__shop">
                                     246
-                                </div>
+                                </button>
                             </div>
                         </div>
                         <div class="item-product mix category-joomla">
-                            <div class="item-product__img">
+                            <div class="item-product__jpg">
+                                <img class="item-product__img" src="images/vela-indigo-image-1554111279616.jpg"
+                                    alt="product">
                                 <div class="item-product__hover">
-                                    <a href="#" class="item-product__btn btn-link"> More info</a>
-                                    <a href="#" class="item-product__btn btn-link">Live Demo</a>
+                                    <a href="#" class="item-product__btn btn btn--white"> More info</a>
+                                    <a href="#" class="item-product__btn btn btn--white">Live Demo</a>
                                 </div>
                             </div>
                             <div class="item-product__inner">
-                                <div class="item-product__title">E-commerce Shoping Cart</div>
+                                <a class="item-product__title" href="#">E-commerce Shoping Cart</a>
                                 <div class="item-product__autor">
-                                    <div class="item-product__avatar"></div>
-                                    <div class="item-product__name">
+                                    <a class="item-product__avatar" href="#"></a>
+                                    <a class="item-product__name" href="#">
                                         Theme-Valley
-                                    </div>
-                                    <div class="item-product__plagin">Plugin</div>
+                                    </a>
+                                    <a class="item-product__plagin" href="#">Plugin</a>
                                 </div>
                                 <div class="item-product__text">
                                     Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
@@ -276,33 +562,36 @@
                                     <div class="item-product__price btn-mix">
                                         $20
                                     </div>
-                                    <div class="item-product__like">
+                                    <button class="item-product__like">
                                         90
-                                    </div>
+                                    </button>
                                 </div>
-                                <div class="item-product__shop">
+                                <button class="item-product__shop">
                                     246
-                                </div>
+                                </button>
                             </div>
                         </div>
                         <div class="item-product mix category-joomla">
-                            <div class="item-product__img">
+                            <div class="item-product__jpg">
+                                <img class="item-product__img" src="images/vela-indigo-image-1554111279616.jpg"
+                                    alt="product">
                                 <div class="item-product__hover">
-                                    <a href="#" class="item-product__btn btn-link"> More info</a>
-                                    <a href="#" class="item-product__btn btn-link">Live Demo</a>
+                                    <a href="#" class="item-product__btn btn btn--white"> More info</a>
+                                    <a href="#" class="item-product__btn btn btn--white">Live Demo</a>
                                 </div>
                             </div>
                             <div class="item-product__inner">
-                                <div class="item-product__title">E-commerce Shoping Cart</div>
+                                <a class="item-product__title" href="#">E-commerce Shoping Cart</a>
                                 <div class="item-product__autor">
-                                    <div class="item-product__avatar"></div>
-                                    <div class="item-product__name">
+                                    <a class="item-product__avatar" href="#"></a>
+                                    <a class="item-product__name" href="#">
                                         Theme-Valley
-                                    </div>
-                                    <div class="item-product__plagin">Plugin</div>
+                                    </a>
+                                    <a class="item-product__plagin" href="#">Plugin</a>
                                 </div>
                                 <div class="item-product__text">
-                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                                    scelerisque
                                     the mattis, leo quam aliquet congue.
                                 </div>
                             </div>
@@ -311,33 +600,36 @@
                                     <div class="item-product__price btn-mix">
                                         $20
                                     </div>
-                                    <div class="item-product__like">
+                                    <button class="item-product__like">
                                         90
-                                    </div>
+                                    </button>
                                 </div>
-                                <div class="item-product__shop">
+                                <button class="item-product__shop">
                                     246
-                                </div>
+                                </button>
                             </div>
                         </div>
                         <div class="item-product mix category-joomla">
-                            <div class="item-product__img">
+                            <div class="item-product__jpg">
+                                <img class="item-product__img" src="images/vela-indigo-image-1554111279616.jpg"
+                                    alt="product">
                                 <div class="item-product__hover">
-                                    <a href="#" class="item-product__btn btn-link"> More info</a>
-                                    <a href="#" class="item-product__btn btn-link">Live Demo</a>
+                                    <a href="#" class="item-product__btn btn btn--white"> More info</a>
+                                    <a href="#" class="item-product__btn btn btn--white">Live Demo</a>
                                 </div>
                             </div>
                             <div class="item-product__inner">
-                                <div class="item-product__title">E-commerce Shoping Cart</div>
+                                <a class="item-product__title" href="#">E-commerce Shoping Cart</a>
                                 <div class="item-product__autor">
-                                    <div class="item-product__avatar"></div>
-                                    <div class="item-product__name">
+                                    <a class="item-product__avatar" href="#"></a>
+                                    <a class="item-product__name" href="#">
                                         Theme-Valley
-                                    </div>
-                                    <div class="item-product__plagin">Plugin</div>
+                                    </a>
+                                    <a class="item-product__plagin" href="#">Plugin</a>
                                 </div>
                                 <div class="item-product__text">
-                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                                    scelerisque
                                     the mattis, leo quam aliquet congue.
                                 </div>
                             </div>
@@ -346,13 +638,13 @@
                                     <div class="item-product__price btn-mix">
                                         $20 - 50
                                     </div>
-                                    <div class="item-product__like">
+                                    <button class="item-product__like">
                                         90
-                                    </div>
+                                    </button>
                                 </div>
-                                <div class="item-product__shop">
+                                <button class="item-product__shop">
                                     246
-                                </div>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -371,7 +663,7 @@
                             Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
                             the mattis, leo quam aliquet diamcongue is laoreet elit metus.
                         </div>
-                        <a href="#" class="service__btn btn-link">
+                        <a href="#" class="service__btn btn btn--white">
                             Become an Author
                         </a>
                     </div>
@@ -385,7 +677,7 @@
                             Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
                             the mattis, leo quam aliquet diamcongue is laoreet elit metus.
                         </div>
-                        <a href="#" class="service__btn btn-link">
+                        <a href="#" class="service__btn btn btn--white">
                             Start Shopping
                         </a>
                     </div>
@@ -445,7 +737,7 @@
                         </div>
                     </div>
                 </div>
-                <a href="#" class="feedback__btn btn">
+                <a class="feedback__btn btn" href="#">
                     View All Reviews
                 </a>
             </div>
@@ -454,22 +746,20 @@
             <div class="marcetplace__inner">
                 <div class="marcetplace__title">Ready to Join Our Marketplace</div>
                 <div class="marcetplace__text">Over 25,000 desigers and developers trust the Marcetplace</div>
-                <a href="#" class="marcetplace__btn-link btn-link">Join Us Today</a>
+                <a href="#" class="marcetplace__btn-link btn btn--white">Join Us Today</a>
 
             </div>
         </section>
     </main>
     <footer class="footer">
-        <div class="footer-top">
+        <div class="footer-topp">
             <div class="container">
                 <div class="footer-top__inner">
-                    <div class="footer-top__menu">
-                        <div class="footer-top__menu-logo">
-                            <a class="footer-top__menu-logo-link" href="#">
-                                <img class="footer-top__menu-link-img" src="images/logo.png" alt="logo">
-                            </a>
-                        </div>
-                        <div class="footer-top__menu-text">
+                    <div class="footer-top">
+                        <a class="footer-top__link" href="#">
+                            <img class="footer-top__img" src="images/logo.png" alt="logo">
+                        </a>
+                        <div class="footer-top__text">
                             Nunc placerat mi id nisi interdum they mollis. Praesent pharetra, justo ut scel erisque the
                             mattis, leo quam.
                         </div>
@@ -486,101 +776,101 @@
                             </div>
                         </address>
                     </div>
-                    <div class="footer-top-item">
-                        <div class="footer-top-item__title">
+                    <div class="footer-item">
+                        <div class="footer-item__title">
                             Our Company
                         </div>
-                        <ul class="footer-top-item__menu">
-                            <li class="footer-top-item__list">
-                                <a class="footer-top-item__link link-action" href="#">
+                        <ul class="footer-item__menu">
+                            <li class="footer-item__list">
+                                <a class="footer-item__link link-action" href="#">
                                     About Us
                                 </a>
                             </li>
-                            <li class="footer-top-item__list">
-                                <a class="footer-top-item__link link-action" href="#">
+                            <li class="footer-item__list">
+                                <a class="footer-item__link link-action" href="#">
                                     How it Work
                                 </a>
                             </li>
-                            <li class="footer-top-item__list">
-                                <a class="footer-top-item__link link-action" href="#">
+                            <li class="footer-item__list">
+                                <a class="footer-item__link link-action" href="#">
                                     Affiliates
                                 </a>
                             </li>
-                            <li class="footer-top-item__list">
-                                <a class="footer-top-item__link link-action" href="#">
+                            <li class="footer-item__list">
+                                <a class="footer-item__link link-action" href="#">
                                     Testimonials
                                 </a>
                             </li>
-                            <li class="footer-top-item__list">
-                                <a class="footer-top-item__link link-action" href="#">
+                            <li class="footer-item__list">
+                                <a class="footer-item__link link-action" href="#">
                                     Contact Us
                                 </a>
                             </li>
-                            <li class="footer-top-item__list">
-                                <a class="footer-top-item__link link-action" href="#">
+                            <li class="footer-item__list">
+                                <a class="footer-item__link link-action" href="#">
                                     Copyright Notice
                                 </a>
                             </li>
-                            <li class="footer-top-item__list">
-                                <a class="footer-top-item__link link-action" href="#">
+                            <li class="footer-item__list">
+                                <a class="footer-item__link link-action" href="#">
                                     Blog
                                 </a>
                             </li>
                         </ul>
                     </div>
-                    <div class="footer-top-item">
-                        <div class="footer-top-item__title">
+                    <div class="footer-item">
+                        <div class="footer-item__title">
                             Help Support
                         </div>
-                        <ul class="footer-top-item__menu">
-                            <li class="footer-top-item__list">
-                                <a class="footer-top-item__link link-action" href="#">
+                        <ul class="footer-item__menu">
+                            <li class="footer-item__list">
+                                <a class="footer-item__link link-action" href="#">
                                     Support Forum
                                 </a>
                             </li>
-                            <li class="footer-top-item__list">
-                                <a class="footer-top-item__link link-action" href="#">
+                            <li class="footer-item__list">
+                                <a class="footer-item__link link-action" href="#">
                                     Terms & Conditions
                                 </a>
                             </li>
-                            <li class="footer-top-item__list">
-                                <a class="footer-top-item__link link-action" href="#">
+                            <li class="footer-item__list">
+                                <a class="footer-item__link link-action" href="#">
                                     Support Policyr
                                 </a>
                             </li>
-                            <li class="footer-top-item__list">
-                                <a class="footer-top-item__link link-action" href="#">
+                            <li class="footer-item__list">
+                                <a class="footer-item__link link-action" href="#">
                                     Refund Policy
                                 </a>
                             </li>
-                            <li class="footer-top-item__list">
-                                <a class="footer-top-item__link link-action" href="#">
+                            <li class="footer-item__list">
+                                <a class="footer-item__link link-action" href="#">
                                     FAQs
                                 </a>
                             </li>
-                            <li class="footer-top-item__list">
-                                <a class="footer-top-item__link link-action" href="#">
+                            <li class="footer-item__list">
+                                <a class="footer-item__link link-action" href="#">
                                     Buyers Faq
                                 </a>
                             </li>
-                            <li class="footer-top-item__list">
-                                <a class="footer-top-item__link link-action" href="#">
+                            <li class="footer-item__list">
+                                <a class="footer-item__link link-action" href="#">
                                     Sellers Faq
                                 </a>
                             </li>
                         </ul>
                     </div>
-                    <div class="footer-top-item">
-                        <div class="footer-top-item__title">
+                    <div class="footer-item">
+                        <div class="footer-item__title">
                             Newsletter
                         </div>
-                        <div class="footer-top-item__text text">
+                        <div class="footer-item__text text">
                             Subscribe to get the latest news, update and offer information. Don't worry, we won't send
                             spam!
                         </div>
-                        <form class="footer-top-item__form">
-                            <input class="footer-top-item__nabor" type="email" placeholder="Enter email">
-                            <button class="footer-top-item__btn btn-submit" type="submit">
+                        <form class="footer-item__form">
+                            <input class="footer-item__nabor" type="email" placeholder="Enter email">
+                            <button class="footer-item__btn btn-submit" type="submit">
                                 Submit
                             </button>
                         </form>
@@ -615,9 +905,6 @@
             </div>
         </div>
     </footer>
-
-
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>

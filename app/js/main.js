@@ -6,4 +6,8 @@ $(function () {
         starWidth:"13px",
         ratedFill:"#ffc000",
     });
+
+    $('.slider__item').slick({
+    
+    });
 });
